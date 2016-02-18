@@ -22,6 +22,11 @@
 				 		$result += 3;
 
 				 }
+				 elseif ($letter == "F" || $letter == "H" || $letter == "V" || $letter == "W" || $letter == "Y")
+				 {
+				 		$result += 4;
+
+				 }
 
 			 }
 			 return $result;

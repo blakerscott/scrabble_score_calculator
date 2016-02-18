@@ -57,6 +57,18 @@
 		$this->assertEquals('4', $result);
 		}
 
+		function test_ScoreSetter_fourPointLetter()
+		{
+		//Arrange
+		$test_Scrabble = new Scrabble;
+		$input = 'HI';
+
+		//Act
+		$result = $test_Scrabble->ScoreSetter($input);
+
+		//Assert
+		$this->assertEquals('5', $result);
+		}
 
 
 
