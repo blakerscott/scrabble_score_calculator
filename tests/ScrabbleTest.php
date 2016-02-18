@@ -9,7 +9,7 @@
 		{
 		//Arrange
 		$test_Scrabble = new Scrabble;
-		$input = 'a';
+		$input = 'A';
 
 		//Act
 		$result = $test_Scrabble->ScoreSetter($input);
@@ -17,6 +17,23 @@
 		//Assert
 		$this->assertEquals('1', $result);
 		}
+
+		function test_ScoreSetter_onePointMultipleLetter()
+		{
+		//Arrange
+		$test_Scrabble = new Scrabble;
+		$input = 'SAT';
+
+		//Act
+		$result = $test_Scrabble->ScoreSetter($input);
+
+		//Assert
+		$this->assertEquals('3', $result);
+		}
+
+
+
+
 	}
 
 ?>
