@@ -7,16 +7,18 @@
 			 $result = 0;
 			 $array = str_split($input);
 			 foreach ($array as $letter) {
-				 if ($letter == "A" || "E" || "I" || "O" || "U" || "L" || "N" || "R" || "S" || "T")
-				 {
-				 		++$result;
-				 }
 
+				 if ($letter == "A" || $letter == "E" || $letter == "I" || $letter == "O" || $letter == "U" || $letter == "L" || $letter == "N" || $letter == "R" || $letter == "S" || $letter == "T")
+				 {
+				 		$result += 1;
+				 }
+				 elseif ($letter == "D" || $letter == "G")
+				 {
+				 		$result += 2;
+
+				 }
 			 }
 			 return $result;
-
-			}
-
-
-	}
- ?>
+		 }
+	 }
+?>

@@ -31,6 +31,19 @@
 		$this->assertEquals('3', $result);
 		}
 
+		function test_ScoreSetter_twoPoinOneLetter()
+		{
+		//Arrange
+		$test_Scrabble = new Scrabble;
+		$input = 'DIRT';
+
+		//Act
+		$result = $test_Scrabble->ScoreSetter($input);
+
+		//Assert
+		$this->assertEquals('5', $result);
+		}
+
 
 
 
