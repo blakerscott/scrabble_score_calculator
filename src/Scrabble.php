@@ -37,6 +37,11 @@
 				 		$result += 8;
 
 				 }
+				 elseif ($letter == "Q" || $letter == "Z")
+				 {
+				 		$result += 10;
+
+				 }
 
 			 }
 			 return $result;

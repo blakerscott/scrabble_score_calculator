@@ -96,6 +96,19 @@
 		$this->assertEquals('17', $result);
 		}
 
+		function test_ScoreSetter_tenPointLetter()
+		{
+		//Arrange
+		$test_Scrabble = new Scrabble;
+		$input = 'QZA';
+
+		//Act
+		$result = $test_Scrabble->ScoreSetter($input);
+
+		//Assert
+		$this->assertEquals('21', $result);
+		}
+
 
 
 	}
