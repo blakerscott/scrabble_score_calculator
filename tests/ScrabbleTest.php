@@ -31,7 +31,7 @@
 		$this->assertEquals('3', $result);
 		}
 
-		function test_ScoreSetter_twoPoinOneLetter()
+		function test_ScoreSetter_twoPointLetter()
 		{
 		//Arrange
 		$test_Scrabble = new Scrabble;
@@ -42,6 +42,19 @@
 
 		//Assert
 		$this->assertEquals('5', $result);
+		}
+
+		function test_ScoreSetter_threePointLetter()
+		{
+		//Arrange
+		$test_Scrabble = new Scrabble;
+		$input = 'PI';
+
+		//Act
+		$result = $test_Scrabble->ScoreSetter($input);
+
+		//Assert
+		$this->assertEquals('4', $result);
 		}
 
 

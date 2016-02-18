@@ -17,6 +17,12 @@
 				 		$result += 2;
 
 				 }
+				 elseif ($letter == "B" || $letter == "C" || $letter == "M" || $letter == "P")
+				 {
+				 		$result += 3;
+
+				 }
+
 			 }
 			 return $result;
 		 }
