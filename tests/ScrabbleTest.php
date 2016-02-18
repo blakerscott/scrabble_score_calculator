@@ -83,6 +83,19 @@
 		$this->assertEquals('6', $result);
 		}
 
+		function test_ScoreSetter_sixPointLetter()
+		{
+		//Arrange
+		$test_Scrabble = new Scrabble;
+		$input = 'XJA';
+
+		//Act
+		$result = $test_Scrabble->ScoreSetter($input);
+
+		//Assert
+		$this->assertEquals('17', $result);
+		}
+
 
 
 	}

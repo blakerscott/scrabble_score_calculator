@@ -32,6 +32,11 @@
 				 		$result += 5;
 
 				 }
+				 elseif ($letter == "J" || $letter == "X")
+				 {
+				 		$result += 8;
+
+				 }
 
 			 }
 			 return $result;
