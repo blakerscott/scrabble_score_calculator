@@ -27,6 +27,11 @@
 				 		$result += 4;
 
 				 }
+				 elseif ($letter == "K")
+				 {
+				 		$result += 5;
+
+				 }
 
 			 }
 			 return $result;
