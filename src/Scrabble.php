@@ -5,7 +5,7 @@
 
 		 function ScoreSetter($input){
 			 $result = 0;
-			 $array = str_split($input);
+			 $array = str_split(strtoupper($input));
 			 foreach ($array as $letter) {
 
 				 if ($letter == "A" || $letter == "E" || $letter == "I" || $letter == "O" || $letter == "U" || $letter == "L" || $letter == "N" || $letter == "R" || $letter == "S" || $letter == "T")

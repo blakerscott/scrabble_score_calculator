@@ -109,6 +109,19 @@
 		$this->assertEquals('21', $result);
 		}
 
+		function test_ScoreSetter_lowerCaseLetter()
+		{
+		//Arrange
+		$test_Scrabble = new Scrabble;
+		$input = 'qka';
+
+		//Act
+		$result = $test_Scrabble->ScoreSetter($input);
+
+		//Assert
+		$this->assertEquals('16', $result);
+		}
+
 
 
 	}
